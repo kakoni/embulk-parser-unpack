@@ -1,6 +1,6 @@
 # Unpack parser plugin for Embulk
 
-Unpack line
+Unpack parser
 
 ## Overview
 
