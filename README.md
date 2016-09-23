@@ -10,6 +10,7 @@ Unpack parser. Useful for parsing fixed width format files.
 ## Configuration
 
 - **format**: Unpack format string. [See String#unpack](http://apidock.com/ruby/String/unpack) (string, required)
+- **columns**: declares the list of columns
 
 ## Example
 
@@ -19,6 +20,11 @@ in:
   parser:
     type: unpack
     format: a2a5@10a4
+    columns:
+    - {name: first, type: string}
+    - {name: second, type: string}
+    - {name: third, type: string}
+
 ```
 
 (If guess supported) you don't have to write `parser:` section in the configuration file. After writing `in:` section, you can let embulk guess `parser:` section using this command:
