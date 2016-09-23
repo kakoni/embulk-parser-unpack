@@ -19,7 +19,7 @@ in:
   type: any file input plugin type
   parser:
     type: unpack
-    format: a2a5@10a4
+    format: a2a5@10a4 #Extracts three values, first 2 chars, then 5 chars and lastly 4 chars from position 10.
     columns:
     - {name: first, type: string}
     - {name: second, type: string}
