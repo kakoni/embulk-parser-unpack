@@ -1,6 +1,6 @@
 # Unpack parser plugin for Embulk
 
-Unpack parser
+Unpack parser. Useful for parsing fixed width format files.
 
 ## Overview
 
