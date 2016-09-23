@@ -1,6 +1,6 @@
 # Unpack parser plugin for Embulk
 
-TODO: Write short description here and embulk-parser-unpack.gemspec file.
+Unpack line
 
 ## Overview
 
@@ -9,9 +9,7 @@ TODO: Write short description here and embulk-parser-unpack.gemspec file.
 
 ## Configuration
 
-- **option1**: description (integer, required)
-- **option2**: description (string, default: `"myvalue"`)
-- **option3**: description (string, default: `null`)
+- **format**: Unpack format string. [See String#unpack](http://apidock.com/ruby/String/unpack) (string, required)
 
 ## Example
 
@@ -20,8 +18,7 @@ in:
   type: any file input plugin type
   parser:
     type: unpack
-    option1: example1
-    option2: example2
+    format: a2a5@10a4
 ```
 
 (If guess supported) you don't have to write `parser:` section in the configuration file. After writing `in:` section, you can let embulk guess `parser:` section using this command:
