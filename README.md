@@ -10,6 +10,7 @@ Unpack parser. Useful for parsing fixed width format files.
 ## Configuration
 
 - **format**: Unpack format string. [See String#unpack](http://apidock.com/ruby/String/unpack) (string, required)
+- **strip_whitespace**: Strip whitespace from parsed values. (bool, default: true)
 - **columns**: declares the list of columns
 
 ## Example
@@ -27,15 +28,8 @@ in:
 
 ```
 
-(If guess supported) you don't have to write `parser:` section in the configuration file. After writing `in:` section, you can let embulk guess `parser:` section using this command:
+## Install plugin
 
 ```
 $ embulk gem install embulk-parser-unpack
-$ embulk guess -g unpack config.yml -o guessed.yml
-```
-
-## Build
-
-```
-$ rake
 ```
