@@ -14,7 +14,7 @@ Can be used to transform `FirstSecond Third` line to `{key: "First", key2: "Seco
 
 - **format**: Unpack format string. [See String#unpack](http://apidock.com/ruby/String/unpack) (string, required)
 - **strip_whitespace**: Strip whitespace from parsed values. (bool, default: true)
-- **columns**: declares the list of columns
+- **columns**: declares the list of columns, unpacked values will be assigned to these in order.
 
 ## Example
 
