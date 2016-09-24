@@ -3,6 +3,7 @@
 # Unpack parser plugin for Embulk
 
 Unpack parser. Useful for parsing fixed width format files.
+Can be used to transform `FirstSecond Third` line to `{key: "First", key2: "Second", key3: "Third"}`
 
 ## Overview
 
