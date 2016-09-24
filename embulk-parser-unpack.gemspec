@@ -4,7 +4,7 @@ Gem::Specification.new do |spec|
   spec.version       = "0.1.0"
   spec.authors       = ["Karri Niemel\u{e4}"]
   spec.summary       = "Unpack parser plugin for Embulk"
-  spec.description   = "Parses files read by other file input plugins."
+  spec.description   = "Parses fixed width files read by other file input plugins."
   spec.email         = ["kakoni@gmail.com"]
   spec.licenses      = ["MIT"]
   spec.homepage      = "https://github.com/kakoni/embulk-parser-unpack"
