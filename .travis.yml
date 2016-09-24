@@ -1,6 +1,6 @@
 language: ruby
 rvm:
-  - jruby-9.0.1.0
+  - jruby-9.1.5.0
 jdk:
   - oraclejdk8
 env:
@@ -8,6 +8,5 @@ env:
     - JRUBY_OPTS="-Xcli.debug=true --debug"
 
 gemfile:
-  - gemfiles/embulk-0.8.9
   - gemfiles/embulk-latest
 
