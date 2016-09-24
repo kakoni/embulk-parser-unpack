@@ -3,6 +3,7 @@
 # Unpack parser plugin for Embulk
 
 Unpack parser. Useful for parsing fixed width format files.
+Can be used to transform `FirstSecond Third` line to `{key: "First", key2: "Second", key3: "Third"}`
 
 ## Overview
 
@@ -13,7 +14,7 @@ Unpack parser. Useful for parsing fixed width format files.
 
 - **format**: Unpack format string. [See String#unpack](http://apidock.com/ruby/String/unpack) (string, required)
 - **strip_whitespace**: Strip whitespace from parsed values. (bool, default: true)
-- **columns**: declares the list of columns
+- **columns**: declares the list of columns, unpacked values will be assigned to these in order.
 
 ## Example
 
