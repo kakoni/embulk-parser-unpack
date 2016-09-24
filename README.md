@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/kakoni/embulk-parser-unpack.svg?branch=master)](https://travis-ci.org/kakoni/embulk-parser-unpack)
+
 # Unpack parser plugin for Embulk
 
 Unpack parser. Useful for parsing fixed width format files.
