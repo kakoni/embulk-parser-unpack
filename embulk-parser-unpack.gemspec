@@ -1,7 +1,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "embulk-parser-unpack"
-  spec.version       = "0.1.0"
+  spec.version       = "0.1.5"
   spec.authors       = ["Karri Niemel\u{e4}"]
   spec.summary       = "Unpack parser plugin for Embulk"
   spec.description   = "Parses fixed width files read by other file input plugins."
