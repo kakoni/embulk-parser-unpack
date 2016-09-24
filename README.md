@@ -1,6 +1,6 @@
 # Unpack parser plugin for Embulk
 
-TODO: Write short description here and embulk-parser-unpack.gemspec file.
+Unpack parser. Useful for parsing fixed width format files.
 
 ## Overview
 
@@ -9,9 +9,8 @@ TODO: Write short description here and embulk-parser-unpack.gemspec file.
 
 ## Configuration
 
-- **option1**: description (integer, required)
-- **option2**: description (string, default: `"myvalue"`)
-- **option3**: description (string, default: `null`)
+- **format**: Unpack format string. [See String#unpack](http://apidock.com/ruby/String/unpack) (string, required)
+- **columns**: declares the list of columns
 
 ## Example
 
@@ -20,8 +19,12 @@ in:
   type: any file input plugin type
   parser:
     type: unpack
-    option1: example1
-    option2: example2
+    format: a2a5@10a4 #Extracts three values, first 2 chars, then 5 chars and lastly 4 chars from position 10.
+    columns:
+    - {name: first, type: string}
+    - {name: second, type: string}
+    - {name: third, type: string}
+
 ```
 
 (If guess supported) you don't have to write `parser:` section in the configuration file. After writing `in:` section, you can let embulk guess `parser:` section using this command:
